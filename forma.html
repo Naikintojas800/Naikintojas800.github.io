@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+   <html>
+
+    <head> 
+        <style>
+            button{
+                background-color: #4CAF50;
+                color: white;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                width: 80%;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: #45a059;
+            }
+
+            label{
+                font-family: sans-serif;
+            }
+
+            input[type="text"], input[type="email"]{
+                width: 80%;
+                padding: 12px 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>  
+
+        <div>   
+
+            <form>  
+
+                <fieldset>
+
+                    <legend>Personal details</legend>
+
+                            <p><label>Salutations: </label>
+                            <select id="Salutations" name="Salutations">
+                                    <option>None</option>
+                                    <option>Mrs.</option>
+                                    <option>Ms</option>
+                                    <option>Mr.</option>
+                                    <option>Dr.</option>
+                                    <option>Dr.</option>
+                                    <option>Toester</option>
+                                    <option>Helicopter</option>
+                            </select>
+                            </p>
+
+                            <p><label> First name:<input id="first-name"  type="text" name="first-name"></label></p>
+
+                            <p><label> Last name:<input id="last-name" type="text" name="last-name"></label></p>
+
+                            <p><label>Gender:</label><br>
+                                <label><input id="male" type="radio" name="gender">Male</label>
+                                <label><input id="female" type="radio" name="gender">Female</label>
+                            </p>
+                            
+                            <p><label> Email:<input id="email" type="email" name="email"></label></p>
+
+                            <p><label> Date of birth:<input id="birth" type="date" name="date-of-birth"></label></p>
+
+                            <p><label> Adress:</label><br>
+                            <textarea id="dress" name="adress" rows="4" cols="40"></textarea></p>
+
+
+                            <p><label><input id="agree-whit-terms" type="checkbox" name="agree-with-terms"> Agree with terms and conditions</label></p>  
+                            
+                            <button id="submit" name="submit"> Submit </button>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+        
+
+    </body>
+
+
+   </html>
