@@ -1,0 +1,88 @@
+body{
+    display: grid;
+    background-color: #1a1a3a;
+    height: 100vh;
+    place-items: center;
+     
+}
+
+.container{
+
+
+    /* Tie mygtukai atsisake lygiuotis ir as vos neisejau is proto */
+
+    grid-gap: 15px;
+    padding-bottom: 20px; ;
+
+    border-radius: 12px;
+    
+    display: grid;
+    background-color:  #232350;
+    
+
+    width: 500px;
+    height: 600px;
+
+    grid-template-columns: repeat(4, 100px);  
+    grid-auto-rows: 60px;
+
+    grid-template-areas: 
+    "C pm prot dal"
+    "septyni astuoni deviny kart"
+    "keturi penki sesi min"
+    "vien du trys plus"
+    "nulis nulis decm lyg";
+    
+    justify-content: center;
+    align-content: end;
+    
+}
+
+
+button{
+    
+    background-color: #2a2a5a;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+    display: block;
+    
+}
+
+.item1 { grid-area: C;}
+.item2 { grid-area: pm;}
+.item3 { grid-area: prot;}
+.item4 { grid-area: dal;}
+.item5 { grid-area: kart;}
+.item6 { grid-area: min;}
+.item7 { grid-area: plus;}
+.item8 { grid-area: lyg;}
+.item9 { grid-area: decm;}
+
+.item01 { grid-area: vien;}
+.item02 { grid-area: du;}
+.item03 { grid-area: trys;}
+.item04 { grid-area: keturi;}
+.item05 { grid-area: penki;}
+.item06 { grid-area: sesi;}
+.item07 { grid-area: septyni;}
+.item08 { grid-area: astuoni;}
+.item09 { grid-area: deviny;}
+.item00 { grid-area: nulis;
+grid-column: span 2;}
+
+.item00 button {
+    width: 100%;   
+    height: 100%;
+    
+}
+
+.item8 button {
+    
+    background-color: #4199e2;
+}

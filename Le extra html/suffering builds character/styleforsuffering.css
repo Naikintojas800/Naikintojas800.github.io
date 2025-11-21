@@ -1,0 +1,44 @@
+.container{
+    position: relative;
+    width: 1000px;
+    max-width: 100%;
+}
+
+.container > img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.Text {
+    position: absolute;
+    color: blue;
+    font-size: 20px;
+}
+
+.topleft{
+    top: 8px;
+    left: 16px;
+}
+
+.topright{
+    top: 8px;
+    right: 16px;
+}
+
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bottomright{
+    bottom: 8px;
+    right: 16px
+}
+
+.bottomleft{
+    bottom: 8px;
+    left: 16px;
+}

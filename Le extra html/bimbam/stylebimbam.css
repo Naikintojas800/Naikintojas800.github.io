@@ -1,0 +1,55 @@
+.item1 {
+    grid-area: q;
+    
+}
+
+.item2 {
+    grid-area: w;
+}
+
+.item3 {
+    grid-area: e;
+}
+
+.item4 {
+    grid-area: r;
+}
+
+.item5 {
+    grid-area: t;
+}
+
+.item6 {
+    grid-area: y;
+}
+
+.item7 {
+    grid-area: u;
+}
+
+.item8 {
+    grid-area: i;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'q q q'
+    'w e r'
+    'w t t'
+    'y y u'
+    'i i i'
+    ;
+    grid-gap: 10px;
+    background-color: brown;
+    padding: 10px;
+}
+
+.grid-container > section{
+    background-color: aqua;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 30px;
+}
