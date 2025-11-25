@@ -1,3 +1,137 @@
+.about{
+    position: relative;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid rgba(255, 255, 255, 0.2);
+  top: 50%;
+  left: 30%;
+  opacity: 0.6;
+  animation: rotateScale 6s ease-in-out infinite alternate;
+}
+
+.triangle.small {
+  border-left-width: 20px;
+  border-right-width: 20px;
+  border-bottom-width: 35px;
+  top: 80%;
+  left: 50%;
+  opacity: 0.4;
+}
+
+@keyframes rotateScale {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.8);
+  }
+}
+
+.services.section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 400px;
+  color: white;
+  font-family: sans-serif;
+  padding: 2rem;
+
+  
+  background: linear-gradient(270deg, #706eff, #738ff5, #0624d3, #ff6ec4);
+  background-size: 800% 800%;
+
+  
+  animation: gradientMove 15s ease infinite, pulse 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+@keyframes pulse {
+  0% { opacity: 0.9; }
+  50% { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+
+
+
+
+.about, .navmenu {
+  opacity: 0;
+  animation: fadeIn 10s ease forwards;
+}
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce){
+.about, .navmenu, #preloader{
+    animation:none !important;
+    opacity: 1 !important;
+}  
+}
+
+
+
+
+
+#preloader {
+  background: #e0f2fa !important;      
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+
+#preloader:before {
+  content: none !important;
+}
+
+
+#preloader::after {
+  content: "";
+  width: 50px;
+  height: 10px;
+  background: #00796b;
+  animation: slide 1s infinite alternate;
+  display: block;
+  border-radius: 5px;
+}
+
+
+@keyframes slide {
+  0% { transform: translateX(-20px); }
+  100% { transform: translateX(20px); }
+}
+
+
+
+
+
 body{
     font-family: 'Courier New', Courier, monospace;
 }
