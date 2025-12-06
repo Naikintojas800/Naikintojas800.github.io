@@ -1,0 +1,101 @@
+ canvas {
+      border: 5px solid rgb(0, 0, 0);
+      display: block;
+      margin: 20px auto;
+      background-color: #ffffff;
+    }
+
+
+.item1 { grid-area: minus1;}
+.item2 { grid-area: plus1;}
+.item3 { grid-area: rez1;}
+.item4 { grid-area: minus2;}
+.item5 { grid-area: plus2;}
+.item6 { grid-area: rez2;}
+.item7 { grid-area: minus3;}
+.item8 { grid-area: plus3;}
+.item9 { grid-area: rez3;}
+.item10 { grid-area: idk1;}
+.item11 { grid-area: idk2;}
+.item12 { grid-area: idk3;}
+
+
+
+
+.container > section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    height: 60px;
+}
+
+
+div{
+   
+    place-items: center;
+}
+
+body{
+    background-color: #1a1a3a;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    color: white;
+    background-color: #2a2a5a;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+
+    background-color:  #232350;
+    
+    border: 5px solid rgb(0, 0, 0);   
+    box-sizing: border-box; 
+    border-radius: 12px;    
+    
+
+    grid-template-areas: 
+    'minus1 plus1 rez1'
+    'minus2 plus2 rez2'
+    'minus3 plus3 rez3'
+    'idk1 idk2 idk3';
+
+    grid-gap: 25px;
+
+    justify-content: center;
+   
+
+    display: grid;
+
+    width: 600px;
+    height: 400px;
+    align-content: center;
+}
+
+button{
+    
+    background-color: #2a2a5a;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+    display: block;
+    
+}
+
+.item10 button,
+.item11 button,
+.item12 button {
+    font-size: 12px;
+}

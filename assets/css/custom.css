@@ -1,3 +1,61 @@
+input.error {
+  border: 2px solid #e53935;
+}
+
+input.success {
+  border: 2px solid #4CAF50;
+}
+
+.error-text {
+  color: #e53935;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 9999;
+}
+
+.popup.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+#result {
+  margin-top: 20px;
+  padding: 5px;
+  border-top: 1px solid #ccc;
+}
+
+.result-item {
+  margin-bottom: 0px;       
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.container1 .row {
+  display: flex;
+  justify-content: center;
+}
+
+
 .about{
     position: relative;
 }
