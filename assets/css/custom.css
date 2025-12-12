@@ -1,3 +1,38 @@
+.telmewhy {
+  display: flex;
+  flex-direction: column; /* Elementai vienas po kito */
+  align-items: center;    /* Horizontaliai centre */
+  justify-content: center; /* Vertikaliai centre */
+  min-height: 80vh;      /* Užima visą ekraną */
+  text-align: center;     /* Tekstas centre */
+  gap: 10px;              /* Tarpai tarp elementų */
+}
+
+.board {
+  display: grid;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.card { 
+  width: 80px; 
+  height: 80px; 
+  background: #ccc; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 2rem; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  user-select: none; 
+}
+.card.flipped { background: #fff; }
+.card.matched { background: #8f8; cursor: default; }
+
+.controls { margin-top: 1rem; }
+#winMessage { margin-top: -40px; font-size: 1.5rem; color: green; }
+.hidden { display: none; }
+
+
 input.error {
   border: 2px solid #e53935;
 }
